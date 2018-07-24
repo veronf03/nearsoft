@@ -1,0 +1,22 @@
+﻿<section class="mainbar" data-ng-controller="admin as vm">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="widget wviolet">
+                    <div class="widget-content user">
+                        <h1>Post</h1>
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix">
+                            <ul>
+                                <li ng-repeat="item in vm.post">
+                                    <a ng-click="selectPst(item.id)">{{item.title}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

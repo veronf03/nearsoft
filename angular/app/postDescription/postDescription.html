@@ -1,0 +1,29 @@
+﻿<section class="mainbar" data-ng-controller="postDescription as vm">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="widget wviolet">
+                    <div class="widget-content user">
+                        <h1>{{vm.postSelect.title}}</h1>
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix">
+                            {{vm.postSelect.body}}<br />
+
+                            <h3>Comments</h3>
+                            <ul>
+                                <li ng-repeat="coment in vm.postComments">
+                                    <b>{{coment.name}}</b>
+                                    <ul>
+                                        <li>{{coment.body}}</li>
+                                    </ul>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
